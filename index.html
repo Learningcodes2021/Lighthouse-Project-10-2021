@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Week 3 Final Project</title>
+    <style>
+      h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-weight: thin;
+        font-size: 38px;
+        color: #0d306b;
+        line-height: 40px;
+        border: 1px solid #0d306b;
+        border-radius: 10px;
+        margin: 0;
+      }
+
+      h2 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 30px;
+        color: #0d306b;
+        line-height: 100px;
+        margin: 0;
+      }
+
+      img {
+        display: block;
+        margin: 0 auto;
+        border: 10px ridge #0d306b;
+        padding: 10px;
+        border-radius: 10px;
+        line-height: 700px;
+        font-weight: thin;
+      }
+
+      hr {
+        color: #0d306b;
+        font-weight: bold;
+      }
+
+      body {
+        background-image: linear-gradient(#ccddd6, #ecd330);
+        margin-top: 28px;
+        margin-bottom: 27px;
+        margin-left: 18px;
+        margin-right: 18px;
+      }
+
+      p {
+        font-size: 17px;
+        font-family: monospace;
+        color: #0d306b;
+        margin-top: 8px;
+        margin-bottom: 8px;
+        margin-left: 8px;
+        margin-right: 8px;
+      }
+
+      a {
+        font-family: monospace;
+        font-weight: bold;
+        font-style: italic;
+        font-size: 14px;
+        color: #0d306b;
+      }
+
+      button {
+        text-align: center;
+        display: block;
+        margin: 0 auto;
+        border-radius: 400px;
+        padding: 16px 24px;
+        font-family: monospace;
+        font-size: 20px;
+        text-decoration: none;
+        transition: all 200ms ease-in-out;
+        border: 1px solid #0d306b;
+        background: #ccddd6;
+        color: #0d306b;
+        box-shadow: 1px 1px 1px 1px;
+        cursor: pointer;
+      }
+
+      button:hover {
+        background: #0d306b;
+        color: #ccddd6;
+        border: 1px solid #0d306b;
+      }
+
+      .built {
+        color: #0d306b;
+        opacity: 0.7;
+        text-align: center;
+      }
+
+      .built-by {
+        font-size: 15px;
+        font-family: monospace;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Lighthouses Are Beautiful</h1>
+    <h2>A Guiding Light For Mariners</h2>
+    <br />
+    <img
+      src="https://www.pexels.com/pexels-mohan-nannapaneni-5829645.jpg"
+      width="400"
+          />
+    <br />
+    <br />
+    <em>
+      <strong>
+        <p>
+          A lighthouse is a tower, building, or other type of structure designed
+          to emit light from a system of lamps and lenses and to serve as a
+          beacon for navigational aid, for maritime pilots at sea or on inland
+          waterways.
+          <br />
+          <br />
+          Lighthouses mark dangerous coastlines, hazardous shoals, reefs, rocks,
+          and safe entries to harbors; they also assist in aerial navigation.
+          Once widely used, the number of operational lighthouses has declined
+          due to the expense of maintenance and has become uneconomical since
+          the advent of much cheaper and more sophisticated and effective
+          electronic navigational systems.
+        </p>
+      </strong>
+    </em>
+    <br />
+    <small>
+      <a href="https://en.wikipedia.org/wiki/Lighthouse" target="_blank">
+        Read on Wikipedia</a
+      >
+    </small>
+    <br />
+    <button>
+      <em><strong>Please Click Here👈</strong></em>
+    </button>
+    <br />
+    <br />
+    <strong>
+      <div class="built">
+        <hr />
+        <span class="built-by"> This page was built by Jacqueline Berry</span>
+      </div>
+    </strong>
+    <br />
+    <script>
+      function pleaseClickHere() {
+        let firstName = prompt("What is your first name?");
+        let agreement = prompt("Do you like lighthouses?");
+        let h1 = document.querySelector("h1");
+
+        if (agreement === "yes") {
+          h1.innerHTML = "Hello " + firstName + "! Welcome to SheCodes! 🖐";
+        } else {
+          h1.innerHTML = " " + firstName + "! Have a Great Day! 😊";
+          alert("Please Come Back Again☀️");
+        }
+      }
+      let pleaseClickHereButton = document.querySelector("button");
+      pleaseClickHereButton.addEventListener("click", pleaseClickHere);
+    </script>
+  </body>
+</html>
